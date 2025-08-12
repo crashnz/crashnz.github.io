@@ -7,7 +7,47 @@ header {
     height: 100px;
 }
 
+/* ul {
+    color: #0c41e2;
+    font-size: 1.3em;
+    display: flex;
+    z-index: 1;
+} */
 
+.list ul{
+    /* display: flex; */
+    /* background-color: #f1f2f5;
+    opacity: 0.5;
+    flex-direction: column;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+    /* position: absolute; */
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(33, 228, 12, 0.1);
+  width: 90%;
+  margin: 30px auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+ul{
+  color: rgb(0, 0, 0);
+}
+
+.flex-container > div {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 40%;
+  margin: 0 auto;
+  /* text-align: center; */
+  line-height: 75px;
+  opacity: 1;
+  font-size: 2em;
+}
 
 
 @media (max-width: 600px) {
@@ -18,12 +58,6 @@ header {
         background-size: cover;
         background-attachment:fixed;
     }
-    /* .menu {
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
-    } */
 
      /* send the check box miles away so it can't be seen or clicked on */
     input[type="checkbox"] {
