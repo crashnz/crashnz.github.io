@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en">
 <head>
 <meta charset= "utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
         <input id='menu' type='checkbox' />
         <div class="menu_control">
             <label for='menu' tabindex="0">
-                <div class="bar1"></div>
+                <div class="bar1">menu</div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
             </label>
@@ -47,18 +47,10 @@
             <form action="index.html" method="post" onsubmit="">
                 <div class="row">
                     <div class="col-25">
-                        <label for="fname">First Name:</label>
+                        <label for="name">Name:</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.." minlength="2" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
-                        <label for="lname">Last Name:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." minlength="2" required>
+                        <input type="text" id="name" name="name" placeholder="Your name.." minlength="2" required>
                     </div>
                 </div>
                 <div class="row">
@@ -71,20 +63,20 @@
                 </div>
                 <div class="row">
                     <div class="col-25">
-                        <label for="postaddress">Postage Address:</label>
-                    </div>
-                    <div class="col-75">
-                        <input type="text" name="postaddress" id="postaddress" placeholder="Postal address.." minlength="5" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-25">
                         <label for="phone">Phone Number:</label>
                     </div>
                     <div class="col-75">
                         <input type="tel" name="phone" id="phone" placeholder="Phone number.." minlength="8" maxlength="32" required>
                     </div>
                 </div> 
+                <div class="row">
+                    <div class="col-25">
+                        <label for="comment">Comment:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="comment" id="comment" placeholder="I would like to discuss...." required>
+                    </div>
+                </div>
                 <input type="submit" value="Submit">
             </form>
         </div>
