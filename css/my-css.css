@@ -33,7 +33,10 @@ ul{
 
 /* booking */
 .booking-form {
+    max-width: 800px;
+    /* height: 2420px; */
     margin: 0 auto;
+    /* position: absolute; */
 }
 
 
@@ -263,6 +266,7 @@ ul{
         padding: 0.5em;
         line-height: 1.6em;
         align-self: right;
+        color: rgba(0, 0, 0, 0);
     }
     nav {
         display: flex;
