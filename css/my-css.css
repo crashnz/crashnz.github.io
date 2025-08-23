@@ -21,17 +21,37 @@ header img{
 /* services */
 
 .services {
+    margin-top: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 40px;
 }
 
-.services .row{
+.services table{
     color: #000000;
     font-size: 1.5em;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgb(216, 33, 33); */
     /* margin-left: 20px;
     margin-right: 20px; */
+}
+
+.col1 {
+    /* width: 90%; */
+}
+
+.col2 {
+    width: 100px;
+}
+
+th {
+    background: #85867e;{}
+}
+
+tr:nth-child(even) {
+    background: #f0cbe8;{}
 }
 
 .services h1{
@@ -39,27 +59,11 @@ header img{
     font-size: 3em;
     max-width: 1200px;
     margin-top: 30px;
+    /* margin-bottom: 30px; */
     margin-left: auto;
     margin-right: auto;
-}
-
-.services .col-25 {
-    float: left;
-    width: 30%;
-    margin-top: 6px;
-    text-align: right;
-}
-
-.services .col-75 {
-    float: left;
-    width: 70%;
-    margin-top: 6px;
-}
-
-.services .row::after {
-    content: "";
-    display: table;
-    clear: both;
+    /* margin: 0 auto; */
+    text-align: center;
 }
 
 /* booking */
