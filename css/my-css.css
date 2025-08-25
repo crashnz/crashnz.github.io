@@ -595,25 +595,29 @@ footer {
     padding-bottom: 20px;
     padding-left: 20px; */
     padding: 20px;
-  }
+}
 
-  footer .copyright {
+footer .copyright {
     text-align: right;
-  }
+}
 
 
-  #contact {
+#contact {
     background-color: #e67e22;
-  }
+}
 
-  #gallery {
+#gallery {
     background-color: #3498db;
-  }
+}
 
-  #booking {
+#booking {
     background-color: #9b59b6;
-  }
+}
 
-  #services {
+#services {
     background-color: #cf49c9;
-  }
+}
+
+#home {
+    background-color: #5b6875;;
+}
