@@ -572,6 +572,36 @@ tr:nth-child(even) {
     }
 }
 
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    nav .start-home, a:nth-child(1):hover~.animation {
+        width: 5.5rem;
+        right: 26rem;
+        /* background-color: #2F9D87; */
+        background-color: #4c02f8;
+    }
+    nav .start-services, a:nth-child(2):hover~.animation {
+        width: 120px;
+        right: 320px;
+        background-color: #cf49c9;
+    }
+    nav .start-gallery, a:nth-child(3):hover~.animation {
+        width: 100px;
+        right: 225px;
+        background-color: #3498db;
+    }
+    nav .start-booking, a:nth-child(4):hover~.animation {
+        width: 120px;
+        right: 108px;
+        background-color: #9b59b6;
+    }
+    nav .start-contact, a:nth-child(5):hover~.animation {
+        width: 108px;
+        right: 3px;
+        background-color: #e67e22;
+    }
+}
+
+
 @media screen and (min-width: 800px) {
     nav p {
         width: auto;
