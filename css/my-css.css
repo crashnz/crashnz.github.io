@@ -383,7 +383,6 @@ tr:nth-child(even) {
         width: 100%;
         position: relative;
         background-color: #767c83;
-        /* background-color: #5b6875; */
         border-radius: 8px;
         justify-content: flex-end;
         flex-wrap: wrap;
@@ -392,10 +391,7 @@ tr:nth-child(even) {
     nav p {
         margin-right: auto;
         margin-left:10px;
-        /* color: #1BB108; */
         color: #92e787;;
-        /* font-size: 1.5em; */
-        /* align-self: center; */
     }
 
     input[type='checkbox']:not(:checked)+.menu_control links {
@@ -553,27 +549,27 @@ tr:nth-child(even) {
 
     nav .start-home, a:nth-child(1):hover~.animation {
         width: 90px;
-        right: 487px;
+        right: 440px;
         background-color: #2F9D87;
     }
     nav .start-services, a:nth-child(2):hover~.animation {
-        width: 130px;
-        right: 357px;
+        width: 120px;
+        right: 320px;
         background-color: #cf49c9;
     }
     nav .start-gallery, a:nth-child(3):hover~.animation {
-        width: 110px;
-        right: 247px;
+        width: 100px;
+        right: 225px;
         background-color: #3498db;
     }
     nav .start-booking, a:nth-child(4):hover~.animation {
-        width: 125px;
-        right: 123px;
+        width: 120px;
+        right: 108px;
         background-color: #9b59b6;
     }
     nav .start-contact, a:nth-child(5):hover~.animation {
-        width: 118px;
-        right: 5px;
+        width: 108px;
+        right: 3px;
         background-color: #e67e22;
     }
 }
