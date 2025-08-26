@@ -638,23 +638,23 @@ tr:nth-child(even) {
 
     nav .start-home, a:nth-child(1):hover~.animation {
         width: 120px;
-        right: 610px;
+        right: 630px;
     }
     nav .start-services, a:nth-child(2):hover~.animation {
         width: 160px;
-        right: 450px;
+        right: 465px;
     }
     nav .start-gallery, a:nth-child(3):hover~.animation {
         width: 140px;
-        right: 310px;
+        right: 318px;
     }
     nav .start-booking, a:nth-child(4):hover~.animation {
         width: 160px;
-        right: 150px;
+        right: 155px;
     }
     nav .start-contact, a:nth-child(5):hover~.animation {
         width: 145px;
-        right: 5px;
+        right: 3px;
     }
 }
 
