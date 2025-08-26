@@ -338,10 +338,7 @@ tr:nth-child(even) {
         margin: 0 auto;
         flex-grow: 1;
     } 
-}
 
-
-@media (max-width: 670px) {
     body {
         background-image: url('../images/try8.jpg');
         background-repeat: no-repeat;
@@ -548,8 +545,8 @@ tr:nth-child(even) {
     }
 
     nav .start-home, a:nth-child(1):hover~.animation {
-        width: 90px;
-        right: 440px;
+        width: 5.5rem;
+        right: 27.5rem;
         background-color: #2F9D87;
     }
     nav .start-services, a:nth-child(2):hover~.animation {
@@ -671,8 +668,8 @@ tr:nth-child(even) {
     }
 
     nav .start-home, a:nth-child(1):hover~.animation {
-        width: 140px;
-        right: 790px;
+        width: 9rem;
+        right: 49.5rem;
     }
     nav .start-services, a:nth-child(2):hover~.animation {
         width: 190px;
@@ -714,4 +711,14 @@ footer {
 .footer p{
     font-size: 1.3em;
     color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #ffffff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
 }
