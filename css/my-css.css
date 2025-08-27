@@ -392,7 +392,7 @@ p{
         flex-wrap: wrap;
     }
 
-    nav p {
+    .homepage-nav {
         margin-right: auto;
         margin-left:10px;
         color: #b8e4b2;
@@ -515,7 +515,7 @@ p{
         align-content: center;
     }
 
-    nav p {
+    .homepage-nav {
         margin-right: auto;
         margin-left:20px;
         color: #C0EFB8;
@@ -523,7 +523,7 @@ p{
         align-self: center;
     }
 
-    nav p {
+    .homepage-nav {
         width: 100px;
     }
 
@@ -608,7 +608,7 @@ p{
 
 
 @media screen and (min-width: 800px) {
-    nav p {
+    .homepage-nav {
         width: auto;
     }
 
@@ -671,7 +671,7 @@ p{
         height: 2.7em;
     }
     
-    nav p{
+    .homepage-nav {
         font-size: 1.5em;
     }
 
