@@ -349,7 +349,7 @@ p{
     } 
 
     body {
-        background-image: url('../images/try8.jpg');
+        background-image: url('../images/background_small.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment:fixed;
@@ -488,7 +488,7 @@ p{
 @media screen and (min-width: 670px) {
 
     body {
-        background-image: url('../images/try6.jpg');
+        background-image: url('../images/background.jpg');
         background-repeat: no-repeat;
         /* width: 90%; */
         margin: 0 auto;
