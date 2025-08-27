@@ -55,21 +55,6 @@ header img{
     height: 100%;
 }
 
-.aboutus, .education {
-    flex-direction:row;
-    justify-content: space-around;
-    align-items: center;
-    flex-shrink: 1;
-    flex-grow: 1;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-
-.aboutus {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 .education h2 {
     /* text-align: center; */
 }
@@ -78,33 +63,26 @@ header img{
 /* services */
 
 .services {
-    
-    /* margin-top: 40px; */
-    /* margin-left: 20px; */
-    /* margin-right: 20px; */
-    /* margin-bottom: 40px; */
     max-width: 1000px;
     margin: 40px auto;
 }
 
-.services h2 {
-    /* text-align: center; */
+.services h2, .services p {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .services table{
     color: #000000;
     font-size: 1.2em;
     max-width: 1400px;
-    /* margin: 0 auto; */
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-.col1 {
-    /* width: 90%; */
-}
-
 .col2 {
-    width: 100px;
+    width: 90px;
 }
 
 th {
@@ -142,7 +120,7 @@ p{
 }
 
 .booking-condition {
-    width: 700px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -657,7 +635,8 @@ p{
         align-items: center;
         flex-shrink: 1;
         flex-grow: 1;
-        /* max-width: 50%; */
+        padding-right: 0px;
+        padding-left: 0px;
     }
 
     .map {
@@ -668,13 +647,20 @@ p{
 
 @media screen and (min-width: 1000px) {
 
-        .aboutus, .education {
+    .aboutus, .education {
         flex-direction:row;
         justify-content: space-around;
         align-items: center;
         flex-shrink: 1;
         flex-grow: 1;
         max-width: 50%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .aboutus {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 }
