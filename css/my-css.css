@@ -345,12 +345,9 @@ p {
     }
 
     figure:hover p {
-				opacity: 1;
-				/* -webkit-transition: opacity .5s ease-in .6s;
-				-moz-transition: opacity .5s ease-in .6s;
-				-ms-transition: opacity .5s ease-in .6s; */
-				transition: opacity .5s ease-in .6s;
-			}
+        opacity: 1;
+        transition: opacity .5s ease-in .6s;
+	}
 
     figure figcaption { height: 50px; }
 	
@@ -360,9 +357,22 @@ p {
 @media screen and (max-width: 670px) {
 	/* figure { width: 100%; } */
 	
-	figcaption p { opacity: 1; }
+	figure:hover figcaption{		
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition: height .5s ease-in;
+    }
 
-	figcaption { height: auto; }
+    figure:hover p {
+        opacity: 1;
+        transition: opacity .5s ease-in .6s;
+	}
+    
+    /* figcaption p { opacity: 1; }
+
+	figcaption { height: auto; } */
 
     .gallery_row1, .gallery_row2, .gallery_row3, .gallery_row4 {
         display: flex;
