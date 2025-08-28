@@ -44,8 +44,51 @@
             </ul>
         </div>
         <div class="booking-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfY4DkBnLV6pUaBxo9saunlQX60g47UmcJFOd0XUQzxpDhPyg/viewform?embedded=true" width="100%" height="2120" frameborder="0" use scrolling="yes" marginheight="0" marginwidth="0" title="Booking Form">Loading…</iframe>
-        </div>
+                <h2>Booking Form</h2>
+                <form action="index.html" method="">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="name" name="name" placeholder="Your name.." minlength="2" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" name="email" id="email" placeholder="Email address.." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Dogs Name:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="dogname" name="dogname" placeholder="Your dogs name.." minlength="2" required>
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Breed:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="dogbreed" name="dogbreed" placeholder="Your dogs breed.." minlength="2" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name">Dogs Age:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="dogage" name="dogage" placeholder="Your dogs age.." min="0" max="30" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
     </section>
     <footer class="footer">
         <p>Opening hours<br>Monday to Saturday: 9 - 5pm</p>

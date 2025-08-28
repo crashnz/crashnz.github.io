@@ -55,10 +55,6 @@ header img{
     height: 100%;
 }
 
-.education h2 {
-    /* text-align: center; */
-}
-
 
 /* services */
 
@@ -115,7 +111,7 @@ tr:nth-child(even) {
     font-size: 1.7em;
 }
 
-p{
+p {
     font-size: 1.1em;
 }
 
@@ -124,12 +120,44 @@ p{
     margin: 0 auto;
 }
 
+.booking-condition h2 {
+    margin-left: 10px;
+}
+
+
+/* booking */
 .booking-form {
-    max-width: 800px;
+    max-width: 700px;
     /* height: 2420px; */
-    margin: 0 auto;
+    margin: 20px auto;
     /* position: absolute; */
 }
+
+.booking-form input, .booking-form #comment {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.booking-form input[type=button], .booking-form input[type=submit], .booking-form input[type=reset] {
+    background-color: #9b59b6;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.booking-form label {
+    padding: 12px 0px 5px 0;
+    display: inline-block;
+    color: #9b59b6;
+    font-weight: 700;
+}
+
+/* contacts */
 
 .contact-flexbox {
     display: flex;
@@ -138,8 +166,6 @@ p{
     /* max-height: 600px; */
 }
 
-
-/* contacts */
 #contact-title {
     text-align: center;
     color: #e67e22;
@@ -155,27 +181,19 @@ p{
     margin: 0px auto;
 }
 
-.contact-form form {
+.contact-form form, .booking-form form {
     max-width: 620px;
     background-color: rgba(164, 168, 164, 0.5);
     padding: 40px;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-.contact-form h1 {
-    text-align: center;
-}
-
-.contact-form h2 {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.contact-form form {
-    max-width: 700px;
     font-size: 1.3rem;
     line-height: 1.2;
+}
+
+.contact-form h2, .booking-form h2 {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .contact-form input, .contact-form #comment {
@@ -202,20 +220,20 @@ p{
     font-weight: 700;
 }
 
-.contact-form .col-25 {
+.contact-form .col-25, .booking-form .col-25 {
     float: left;
     width: 30%;
     margin-top: 6px;
 }
 
-.contact-form .col-75 {
+.contact-form .col-75, .booking-form .col-75 {
     float: left;
     width: 70%;
     margin-top: 6px;
 }
 
 /* Clear floats after the columns */
-.contact-form .row::after {
+.contact-form .row::after, .booking-form .row::after {
     content: "";
     display: table;
     clear: both;
@@ -297,6 +315,15 @@ p{
     }
     
     .col-25, .contact-form .col-75, .contact-form input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .booking-form {
+        margin: 20px auto;
+    }
+    
+    .col-25, .booking-form .col-75, .booking-form input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
@@ -393,9 +420,12 @@ p{
     }
 
     .homepage-nav {
+        margin-top: 20px;
         margin-right: auto;
         margin-left:10px;
         color: #b8e4b2;
+        font-size: 1.0em;
+        text-decoration: none;
     }
 
     input[type='checkbox']:not(:checked)+.menu_control links {
@@ -414,7 +444,7 @@ p{
         transform: translate(0, -11px) rotate(45deg);
     }
 
-    nav a {
+    .menu_control a {
         /* padding-left: 20px; */
         padding-right: 20px;
         font-size: 35px;
@@ -432,50 +462,50 @@ p{
         transition: all .5s ease 0s;
         border-radius: 8px;
     }
-    a:nth-child(1) {
+    .menu_control a:nth-child(1) {
         height: 70px;
     }
-    a:nth-child(2) {
+    .menu_control a:nth-child(2) {
         height: 70px;
     }
-    a:nth-child(3) {
+    .menu_control a:nth-child(3) {
         height: 70px;
     }
-    a:nth-child(4) {
+    .menu_control a:nth-child(4) {
         height: 70px;
     }
-    a:nth-child(5) {
+    .menu_control a:nth-child(5) {
         height: 70px;
     }
-    nav .start-home, a:nth-child(1):hover~.animation {
+    nav .start-home, .menu_control a:nth-child(1):hover~.animation {
         width: 300px;
         height: 60px;
         top: 50px;
         right: 0;
         background-color: #1abc9c;
     }
-    nav .start-services, a:nth-child(2):hover~.animation {
+    nav .start-services, .menu_control a:nth-child(2):hover~.animation {
         width: 300px;
         height: 60px;
         top: 120px;
         right: 0;
         background-color: #cf49c9;
     }
-    nav .start-gallery, a:nth-child(3):hover~.animation {
+    nav .start-gallery, .menu_control a:nth-child(3):hover~.animation {
         width: 300px;
         right: 0;
         height: 70px;
         top: 180px;
         background-color: #3498db;
     }
-    nav .start-booking, a:nth-child(4):hover~.animation {
+    nav .start-booking, .menu_control a:nth-child(4):hover~.animation {
         width: 300px;
         right: 0;
         height: 70px;
         top: 250px;
         background-color: #9b59b6;
     }
-    nav .start-contact, a:nth-child(5):hover~.animation {
+    nav .start-contact, .menu_control a:nth-child(5):hover~.animation {
         width: 300px;
         right: 0;
         height: 70px;
@@ -485,7 +515,7 @@ p{
 }
 
 
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 671px) {
 
     body {
         background-image: url('../images/background.jpg');
@@ -521,10 +551,8 @@ p{
         color: #C0EFB8;
         font-size: 1.0em;
         align-self: center;
-    }
-
-    .homepage-nav {
         width: 100px;
+        text-decoration: none;
     }
 
     nav {
@@ -532,7 +560,7 @@ p{
         padding-bottom: 5px;
     }
 
-    nav a {
+    .menu_control a {
         padding-left: 0px;
         padding-right: 10px;
         font-size: 25px;
@@ -551,27 +579,27 @@ p{
         border-radius: 8px;
     }
 
-    nav .start-home, a:nth-child(1):hover~.animation {
+    nav .start-home, .menu_control a:nth-child(1):hover~.animation {
         width: 5.5rem;
         right: 27.5rem;
         background-color: #2F9D87;
     }
-    nav .start-services, a:nth-child(2):hover~.animation {
+    nav .start-services, .menu_control a:nth-child(2):hover~.animation {
         width: 120px;
         right: 320px;
         background-color: #cf49c9;
     }
-    nav .start-gallery, a:nth-child(3):hover~.animation {
+    nav .start-gallery, .menu_control a:nth-child(3):hover~.animation {
         width: 100px;
         right: 225px;
         background-color: #3498db;
     }
-    nav .start-booking, a:nth-child(4):hover~.animation {
+    nav .start-booking, .menu_control a:nth-child(4):hover~.animation {
         width: 120px;
         right: 108px;
         background-color: #9b59b6;
     }
-    nav .start-contact, a:nth-child(5):hover~.animation {
+    nav .start-contact, .menu_control a:nth-child(5):hover~.animation {
         width: 108px;
         right: 3px;
         background-color: #e67e22;
@@ -579,27 +607,27 @@ p{
 }
 
 @media screen and (max-width: 800px) and (orientation: landscape) {
-    nav .start-home, a:nth-child(1):hover~.animation {
+    nav .start-home, .menu_control a:nth-child(1):hover~.animation {
         width: 5.5rem;
         right: 26rem;
         background-color: #2F9D87;
     }
-    nav .start-services, a:nth-child(2):hover~.animation {
+    nav .start-services, .menu_control a:nth-child(2):hover~.animation {
         width: 120px;
         right: 300px;
         background-color: #cf49c9;
     }
-    nav .start-gallery, a:nth-child(3):hover~.animation {
+    nav .start-gallery, .menu_control a:nth-child(3):hover~.animation {
         width: 98px;
         right: 210px;
         background-color: #3498db;
     }
-    nav .start-booking, a:nth-child(4):hover~.animation {
+    nav .start-booking, .menu_control a:nth-child(4):hover~.animation {
         width: 115px;
         right: 102px;
         background-color: #9b59b6;
     }
-    nav .start-contact, a:nth-child(5):hover~.animation {
+    nav .start-contact, .menu_control a:nth-child(5):hover~.animation {
         width: 106px;
         right: 3px;
         background-color: #e67e22;
@@ -629,7 +657,7 @@ p{
         flex-basis: 25%;
     }
 
-        .aboutus, .education {
+    .aboutus, .education {
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
@@ -675,29 +703,29 @@ p{
         font-size: 1.5em;
     }
 
-    nav a {
+    .menu_control a {
         padding-left: 10px;
         padding-right: 10px;
         font-size: 35px;
     }
 
-    nav .start-home, a:nth-child(1):hover~.animation {
+    nav .start-home, .menu_control a:nth-child(1):hover~.animation {
         width: 120px;
         right: 630px;
     }
-    nav .start-services, a:nth-child(2):hover~.animation {
+    nav .start-services, .menu_control a:nth-child(2):hover~.animation {
         width: 160px;
         right: 465px;
     }
-    nav .start-gallery, a:nth-child(3):hover~.animation {
+    nav .start-gallery, .menu_control a:nth-child(3):hover~.animation {
         width: 140px;
         right: 318px;
     }
-    nav .start-booking, a:nth-child(4):hover~.animation {
+    nav .start-booking, .menu_control a:nth-child(4):hover~.animation {
         width: 160px;
         right: 155px;
     }
-    nav .start-contact, a:nth-child(5):hover~.animation {
+    nav .start-contact, .menu_control a:nth-child(5):hover~.animation {
         width: 145px;
         right: 3px;
     }
@@ -736,29 +764,29 @@ p{
         height: 3em;
     }
     
-    nav a {
+    .menu_control a {
         padding-left: 20px;
         padding-right: 20px;
         font-size: 40px;
     }
 
-    nav .start-home, a:nth-child(1):hover~.animation {
+    nav .start-home, .menu_control a:nth-child(1):hover~.animation {
         width: 9rem;
         right: 49.5rem;
     }
-    nav .start-services, a:nth-child(2):hover~.animation {
+    nav .start-services, .menu_control a:nth-child(2):hover~.animation {
         width: 190px;
         right: 585px;
     }
-    nav .start-gallery, a:nth-child(3):hover~.animation {
+    nav .start-gallery, .menu_control a:nth-child(3):hover~.animation {
         width: 165px;
         right: 405px;
     }
-    nav .start-booking, a:nth-child(4):hover~.animation {
+    nav .start-booking, .menu_control a:nth-child(4):hover~.animation {
         width: 190px;
         right: 195px;
     }
-    nav .start-contact, a:nth-child(5):hover~.animation {
+    nav .start-contact, .menu_control a:nth-child(5):hover~.animation {
         width: 175px;
         right: 5px;
     }
