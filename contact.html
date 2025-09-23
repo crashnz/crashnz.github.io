@@ -5,85 +5,121 @@
 <meta charset= "utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Snazzy paws grooming contacts page">
-<link rel= "stylesheet " href="css/my-css.css">
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel= "stylesheet " href="css/my-css.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <title>Snazzy Paws Grooming Contacts</title>
 </head>
 <body>
     <header>
         <div>
-            <img src="images/header.png" alt="Header picture of a cartoon dog in a wash tub with soapy bubbles all around.">
+            <img class="row img-fluid mx-auto" src="images/header.png" alt="Header picture of a cartoon dog in a wash tub with soapy bubbles all around.">
         </div>
     </header> 
-    <nav class="mochiy-pop-one-regular">
-        <a class="homepage-nav" href="./index.html">Snazzy Paws Grooming</a>
-        <input id='menu' type='checkbox' />
-        <div class="menu_control">
-            <label for='menu' tabindex="0">
-                <div class="bar1">menu</div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </label>
-            <links>
-                <a href="./index.html">Home</a>
-                <a href="./services.html">Services</a>
-                <a href="./gallery.html">Gallery</a>
-                <a href="./booking.html">Booking</a>
-                <a href="./contact.html">Contact</a>
-                <div class="animation start-contact"></div>
-            </links>
-        </div>
+ <nav class="navbar navbar-expand-md" data-bs-theme="light">
+        <a class="navbar-brand mb-0 h1" href="./index.html">Snazzy Paws Grooming</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./booking.html">Booking</a>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>  
     </nav>
-    <section>
-        <h1 id="contact-title">Want to get in contact?</h1>
-        <div class="contact-flexbox">
+    <section class="contact">
+        <h1 class="text-center">Want to get in contact?</h1>
+        <div class="d-lg-flex flex-row justify-content-around">
             <div class="map">
-                <h2>Find us at this location or leave us a message</h2>
+                <h3>Find us at this location or leave us a message</h3>
                 <p>1167 Victoria Street, Whitiora, Hamilton 3200</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1875.135515427945!2d175.27168855920124!3d-37.77622630542131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d189fc3a77605%3A0x375d04bc77bf1dc4!2s5%2F1167%20Victoria%20Street%2C%20Whitiora%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1756245228880!5m2!1sen!2snz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google map of Snazzy Paws Grooming Location"></iframe>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1875.135515427945!2d175.27168855920124!3d-37.77622630542131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d189fc3a77605%3A0x375d04bc77bf1dc4!2s5%2F1167%20Victoria%20Street%2C%20Whitiora%2C%20Hamilton%203200!5e0!3m2!1sen!2snz!4v1756245228880!5m2!1sen!2snz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Google map of Snazzy Paws Grooming Location"></iframe>
+                </div>
             </div>
             <div class="contact-form">
-                <h2>Want to leave us a message please enter your details here</h2>
+                <h3>Want to leave us a message please enter your details here</h3>
                 <form action="index.html" method="">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="name">Name:</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="text" id="name" name="name" placeholder="Your name.." minlength="2" required>
+                    <div class="form-group row">
+                        <label for="name" class="col-sm-2 col-form-label">Name:</label>
+                        <div  class="col-sm-7">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Your name.." minlength="2" required>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="email">Email:</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="email" name="email" id="email" placeholder="Email address.." required>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label">Email:</label>
+                        <div  class="col-sm-7">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email address.." required>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="phone">Phone Number:</label>
-                        </div>
-                        <div class="col-75">
-                            <input type="tel" name="phone" id="phone" placeholder="Phone number.." minlength="8" maxlength="32" required>
+                    <div class="form-group row">
+                        <label for="phone" class="col-sm-2 col-form-label">Phone Number:</label>
+                        <div  class="col-sm-7">
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="Phone number.." minlength="8" maxlength="32" required>
                         </div>
                     </div> 
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="comment">Comment:</label>
-                        </div>
-                        <div class="col-75">
-                            <textarea name="comment" id="comment" rows="5" cols="40" placeholder="I would like to discuss...." required></textarea>
+                    <div class="form-group row">
+                        <label for="comment" class="col-sm-2 col-form-label">Comment:</label>
+                        <div  class="col-sm-7">
+                            <textarea name="comment" id="comment" rows="5" cols="40" class="form-control" placeholder="I would like to discuss...." required></textarea>
                         </div>
                     </div>
-                    <input type="submit" value="Submit">
+                    <div class="form-group row">
+                        <div class="row col-md-7">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p>Opening hours<br>Monday to Saturday: 9 - 5pm</p>
-        <p class="copyright">©  Snazzy Paws Grooming - 2025</p> 
+    <footer class="container-fluid">
+        <div class="row container-flex text-center">
+            <div class="col-md-4">
+                <h5>Opening hours</h5>
+                <ul class="list-unstyled">
+                    <li>Monday 9am - 5pm</li>
+                    <li>Tuesday 9am - 5pm</li>
+                    <li>Wednesday 9am - 5pm</li>
+                    <li>Thursday 9am - 5pm</li>
+                    <li>Friday 9am - 5pm</li>
+                    <li>Saturday 9am - 5pm</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Helpful Links</h5>
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./privacy.html">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./roster.html">Staff Rosters</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2025 Snazzy Paws Grooming</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
