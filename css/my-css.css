@@ -1,16 +1,15 @@
 
+/* CSS to apply to the body on all pages of website */
 body {
         overflow-x: hidden;
-        /* background-color: rgba(255, 255, 255, 0); */
-}
-
-.main{
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    /* filter:brightness(1.0); */
-    position: absolute;
-    z-index: -1;
+        /* background rules to have the picture background. */
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        background-size: cover;
+        background-position: center top;
+        background-attachment:fixed;
+        background-blend-mode: color-burn;
+        background-color: rgba(255, 255, 255, 0.8);
 }
 
 header{
@@ -21,55 +20,27 @@ nav, footer{
     background-color: #5b5f64;
 }
 
+/* CSS configurations for screens larger than 700px */
 @media screen and (min-width: 701px) {
-
-    figure:hover figcaption{		
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        transition: height .5s ease-in;
-    }
 
     figure:hover p {
         opacity: 1;
         transition: opacity .5s ease-in .3s;
 	}
 
-    figure figcaption { height: 5%; }
-	
-	figure p { opacity: 0; }
-
     .education {
         min-width: 500px;
     }
 
     body {
+        /* larger background image used for bigger screens */
         background-image: url('../images/background.jpg');
-        background-repeat: no-repeat;
-        /* width: 90%; */
-        margin: 0 auto;
-        /* background-size: cover; */
-        background-size: cover;
-        background-position: center top;
-        background-attachment:fixed;
-        background-blend-mode: color-burn;
-        background-color: rgba(255, 255, 255, 0.8);
     }
 }
 
+/* CSS configurations for screens smaller than 701px */
 @media screen and (max-width: 700px) {
 	figure { width: 100%; }
-	
-	figure:hover figcaption{		
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        transition: height .5s ease-in;
-    }
-
-    figure figcaption { height: 5%; }
 
     figure:hover p {
         opacity: 1;
@@ -80,35 +51,21 @@ nav, footer{
         max-width: 100%;
     }
 
+
     body{
+        /* smaller background image used for smaller screens */
         background-image: url('../images/background_small.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment:fixed;
+    }
+}
+
+/* in large screen mode if you hover over image, display caption. Mobile mode caption will 
+display on click, and will disappear after another image is clicked on */
+figure:hover figcaption{		
+        position: absolute;
+        bottom: 0;
+        width: 100%;
         height: 100%;
-        margin: 0 auto;
-        background-position: center top;
-        background-blend-mode: color-burn;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-
-     /* .contact-form {
-        margin: 20px auto;
-    }
-    
-    .col-25, .contact-form .col-75, .contact-form input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    }
-
-    .booking-form {
-        margin: 20px auto;
-    }
-    
-    .col-25, .booking-form .col-75, .booking-form input[type=submit] {
-        width: 100%;
-        margin-top: 0;
-    } */
+        transition: height .5s ease-in;
 }
 
 .gallery figure {
@@ -116,8 +73,12 @@ nav, footer{
     position: relative;
 }
 
+figure figcaption { height: 5%; }
+
 figure p { opacity: 0; }
 
+/* Display figure caption at the bottom of each image in gallery, the 
+transition adds animation for large screens where the caption box increases in size and the text slowly appears. */
 .gallery figure figcaption {
     background: rgba(250,250,250, .8);
     bottom: 0;
@@ -129,6 +90,7 @@ figure p { opacity: 0; }
     overflow: hidden;
 }
 
+/* Show 5% of the figure caption screen at bottom of image */
 figure figcaption { height: 5%; }
 		
 .gallery p { margin-top: .5rem; }
@@ -139,19 +101,6 @@ figure figcaption { height: 5%; }
     height: auto;
 }
 
-figure, .img-vertical {
-    /* max-height: 400px; */
-    /* height: auto; */
-    /* max-width: 100%; */
-}
-
-figure, .img-horizontal {
-    /* max-height: 400px; */
-    /* height: 400px; */
-    /* width: auto; */
-    /* max-width: 100%; */
-}
-
 footer {
     color: white;
 }
@@ -159,6 +108,7 @@ footer {
 
 /* Services section */
 
+/* Show different colours for each line of the table */
 .services .table tr:nth-child(even) td{
     background-color: #f0cbe8;
  }
@@ -192,6 +142,7 @@ footer {
     overflow-x: auto;
 }
 
+/* Make the first column and header sticky so that the user can scroll and still see the times. */
 .roster th:first-child, .roster td:first-child{
     position: sticky;
     left: 0px;
@@ -227,11 +178,13 @@ footer {
     max-width: 900px;    
 }
 
+/* This is being applied to most pages to create white space when in mobile mode. */
 .aboutus, .education, .booking-condition, .booking-form, .contact-form, .map{
     margin-left: 10px;
     margin-right: 10px;
 }
 
+/* Create space above and below content so the footer and nav are further away. */
 .home, .booking, .contact, .services, .gallery, .privacy, .roster-content{
     padding-top: 20px;
     padding-bottom: 40px;
@@ -270,11 +223,13 @@ footer {
     margin-left: 10px;
 }
 
+/* Add theme colours */
 .booking h1, .booking label{
     color: #9b59b6;
     font-weight: bold;
 }
 
+/* Add theme colours */
 .contact h1, .contact label{
     font-weight: bold;
     color: #e67e22;
@@ -286,24 +241,29 @@ footer {
     margin-left: 10px;
 }
 
+/* Add theme colours */
 .contact .btn{
     background-color: #e67e22;
 }
 
+/* Add theme colours */
 .booking .btn{
     background-color: #9b59b6;
 }
 
+/* Add theme colours*/
 .gallery h1{
     font-weight: bold;
     color: #3498db;
 }
 
+/* Add theme colours*/
 .services h1{
     font-weight: bold;
     color: #cf49c9;
 }
 
+/* Add theme colours*/
 .home h1{
     color: #1abc9c;
     font-weight: bold;
@@ -321,6 +281,7 @@ footer h5{
 }
 
 /* Nav section */
+
 /* Highlights the main navigation links various colours based on page 
 theme and will stay coloured for the active page  */
 

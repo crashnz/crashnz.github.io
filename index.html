@@ -2,17 +2,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset= "utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Snazzy paws grooming homepage">
-<link rel= "stylesheet " href="css/my-css.css">
-<!-- <link rel= "stylesheet " href="css/bootstrap.css"> -->
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel= "stylesheet " href="css/my-css.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<title>Snazzy Paws Grooming</title>
+    <meta charset= "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy paws grooming homepage">
+    <!-- Enable various bootstrap CSS and JS functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel= "stylesheet " href="css/my-css.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Snazzy Paws Grooming</title>
 </head>
 <body>
     <header>
@@ -22,9 +21,11 @@
     </header> 
     <nav class="navbar navbar-expand-md" data-bs-theme="light">
         <a class="navbar-brand mb-0 h1" href="./index.html">Snazzy Paws Grooming</a>
+        <!-- create hamburer button -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- create unordered list of nav links and apply the navbar-collapse classes to string the nav to hambuger on smaller screens -->
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
@@ -46,10 +47,11 @@
         </div>  
     </nav>
     <section class="home">
-        <!-- <img class="bg-img main" src="images/background.jpg" alt="Picture of a dog being used as a background image"> -->
         <div class="welcome">
             <h1 class="text-center">Welcome to Snazzy Paws Grooming</h1>   
         </div>
+        <!-- using flex row to create a row with two columns one for about us and the other for tip of the 
+         week. On small screens the row becomes a single column -->
         <div class="d-lg-flex flex-row justify-content-around">
             <div class="aboutus">
                 <h3>About Us</h3>
@@ -63,6 +65,7 @@
             </div>
             <div class="education">
                 <h3>Tip of the week - Different types of dog brushes.</h3>
+                <!-- Using bootstrap ratio 16x9 to let the you tube iframe grow and strink in the space its provided with. -->
                 <div class="ratio ratio-16x9">
                     <iframe src="https://www.youtube.com/embed/k9peAUJNQZ0?si=gCCw3i1ot1h1gfBU" title="YouTube video player featuring tip of the week" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
@@ -70,6 +73,7 @@
         </div>
     </section>
     <footer class="container-fluid">
+        <!-- using bootstarp col classes to add content to the footer. -->
         <div class="row container-flex text-center">
             <div class="col-md-4">
                 <h5>Opening hours</h5>
