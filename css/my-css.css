@@ -13,6 +13,10 @@ body {
     z-index: -1;
 }
 
+header{
+    background-color: #ffffff;
+}
+
 nav, footer{
     background-color: #5b5f64;
 }
@@ -39,9 +43,22 @@ nav, footer{
     .education {
         min-width: 500px;
     }
+
+    body {
+        background-image: url('../images/background.jpg');
+        background-repeat: no-repeat;
+        /* width: 90%; */
+        margin: 0 auto;
+        /* background-size: cover; */
+        background-size: cover;
+        background-position: center top;
+        background-attachment:fixed;
+        background-blend-mode: color-burn;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 }
 
-@media screen and (max-width: 670px) {
+@media screen and (max-width: 700px) {
 	figure { width: 100%; }
 	
 	figure:hover figcaption{		
@@ -61,6 +78,18 @@ nav, footer{
 
     .booking-form {
         max-width: 100%;
+    }
+
+    body{
+        background-image: url('../images/background_small.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:fixed;
+        height: 100%;
+        margin: 0 auto;
+        background-position: center top;
+        background-blend-mode: color-burn;
+        background-color: rgba(255, 255, 255, 0.8);
     }
 
      /* .contact-form {
@@ -280,4 +309,55 @@ footer {
 
 footer h5{
     margin-top: 10px;
+}
+
+.contact-form form, .booking-form form {
+    background-color: rgba(164, 168, 164, 0.5);
+    padding: 40px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+}
+
+/* Nav section */
+/* Highlights the main navigation links various colours based on page 
+theme and will stay coloured for the active page  */
+
+nav .start-home, a:nth-child(1):hover {
+    background-color: #1abc9c;
+}
+
+nav li:nth-child(1) a:hover {
+    background-color: #1abc9c;
+}
+
+nav .start-services, a:nth-child(2):hover {
+    background-color: #cf49c9;
+}
+
+nav li:nth-child(2) a:hover {
+    background-color: #cf49c9;
+}
+
+nav .start-gallery, a:nth-child(3):hover {
+    background-color: #3498db;
+}
+
+nav li:nth-child(3) a:hover {
+    background-color: #3498db;
+}
+
+nav .start-booking, a:nth-child(4):hover {
+    background-color: #9b59b6;
+}
+
+nav li:nth-child(4) a:hover {
+    background-color: #9b59b6;
+}
+
+nav .start-contact, a:nth-child(5):hover {
+    background-color: #e67e22;
+}
+
+nav li:nth-child(5) a:hover {
+    background-color: #e67e22;
 }
